@@ -1,0 +1,6 @@
+<h1><%= @garden.name %></h1>
+
+<h3>Plants in this garden taking less than one hundred days to harvest</h3>
+<% @garden.fast_harvest_plants.each do |plant| %>
+  <%= plant.name %><br>
+<% end %>
